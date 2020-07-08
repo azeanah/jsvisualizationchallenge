@@ -51,7 +51,7 @@ function getPlots(id) {
 
 
             // bar plot
-        Plot.newPlot("bar", data, layout);
+        Plotly.newPlot("bar", data, layout);
             var trace1 = {
                 x: result.otu_ids,
                 y: result.sampleValues,
@@ -71,7 +71,7 @@ function getPlots(id) {
 
             var data1 = [trace1];
 
-        Plot.newPlot("bubble", data1, layout_2);
+        Plotly.newPlot("bubble", data1, layout_2);
         });
     }
 
